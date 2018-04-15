@@ -7,7 +7,7 @@
     "test": "mocha",
     "start": "npm run build:live",
     "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts",
-    "build":"tsc"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,7 @@
   "devDependencies": {
     "@types/node": "^9.6.5",
     "@types/zeromq": "^4.6.1",
+    "@types/rx": "^4.1.1",
     "chai": "^4.1.2",
     "mocha": "^5.1.0",
     "nodemon": "^1.17.3",
@@ -22,6 +23,7 @@
     "typescript": "^2.8.1"
   },
   "dependencies": {
+    "rx": "^4.1.0",
     "typestyle": "^1.7.2",
     "zeromq": "^4.6.0"
   }
