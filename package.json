@@ -1,0 +1,28 @@
+{
+  "name": "tsnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts",
+    "build":"tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^9.6.5",
+    "@types/zeromq": "^4.6.1",
+    "chai": "^4.1.2",
+    "mocha": "^5.1.0",
+    "nodemon": "^1.17.3",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.8.1"
+  },
+  "dependencies": {
+    "typestyle": "^1.7.2",
+    "zeromq": "^4.6.0"
+  }
+}
