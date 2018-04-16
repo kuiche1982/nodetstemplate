@@ -6,16 +6,17 @@
   "scripts": {
     "test": "mocha",
     "start": "npm run build:live",
-    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node --harmony -- ./src/index.ts",
     "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/es6-shim": "^0.31.36",
     "@types/node": "^9.6.5",
-    "@types/zeromq": "^4.6.1",
     "@types/rx": "^4.1.1",
+    "@types/zeromq": "^4.6.1",
     "chai": "^4.1.2",
     "mocha": "^5.1.0",
     "nodemon": "^1.17.3",
